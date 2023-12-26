@@ -1,8 +1,6 @@
 package com.spotify.quavergd06.data.model
 
 import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import com.spotify.quavergd06.database.Converters
 import com.spotify.quavergd06.database.StringListWrapper

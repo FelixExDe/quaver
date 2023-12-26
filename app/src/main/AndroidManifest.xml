@@ -37,7 +37,7 @@
         <service
             android:name=".api.SpotifyApiService"
             android:enabled="true"
-            android:exported="true"
+            android:exported="false"
             tools:ignore="Instantiatable"></service>
 
         <activity
