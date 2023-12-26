@@ -22,6 +22,7 @@ import org.osmdroid.views.overlay.Marker
 
 import com.spotify.quavergd06.data.model.Moment
 import com.spotify.quavergd06.view.home.HomeViewModel
+import org.osmdroid.views.CustomZoomButtonsController
 
 
 class MapFragment : Fragment() {
@@ -62,7 +63,7 @@ class MapFragment : Fragment() {
     private fun configureMapView() {
         // Configura el mapa y la vista
         mapView.setTileSource(TileSourceFactory.MAPNIK)
-        mapView.setBuiltInZoomControls(true)
+        mapView.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.SHOW_AND_FADEOUT)
         mapView.setMultiTouchControls(true)
 
         // Centra el mapa en una ubicación inicial
